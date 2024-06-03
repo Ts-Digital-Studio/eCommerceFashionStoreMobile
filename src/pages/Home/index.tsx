@@ -1,10 +1,13 @@
 import React from 'react';
-import { Conteiner } from './style';
+import { 
+  Conteiner,
+  Text
+} from './style';
 
 export default function Home() {
   return (
     <Conteiner>
-       
+      <Text>Ola peessoas!</Text>
     </Conteiner>
   );
 }
