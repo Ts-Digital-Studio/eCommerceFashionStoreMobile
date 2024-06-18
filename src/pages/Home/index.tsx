@@ -7,6 +7,7 @@ import {
   IconNotification
 } from './style';
 import { TouchableOpacity } from 'react-native';
+import SearchBar from '../../components/SearchBar';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <IconNotification name='notifications-outline' />
         </TouchableOpacity>
       </ConteinerTxtTitule>
+      <SearchBar/>
     </Conteiner>
   );
 }
