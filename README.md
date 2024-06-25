@@ -51,10 +51,10 @@ Para esse projeto eu em especial prefirir usar um Design pronto no intuito de se
 <div style="display: inline_block" align="center">
 
 <h4>Telas inicial juntamente com a navegacao do app | Telas relacionadas ao user e produtos</h4>
-<img  alt="Home Page" width="200" src="./src/assets/Home Page.png">
-<img  alt="Shop by Category" width="204" src="./src/assets/Shop by Category.png">
-<img  alt="Tops" width="213" src="./src/assets/Tops.png">
-<img  alt="User Profile" width="205" src="./src/assets/User Profile.png">
+<img  alt="Home Page" width="190" src="./src/assets/Home Page.png">
+<img  alt="Shop by Category" width=190" src="./src/assets/Shop by Category.png">
+<img  alt="Tops" width="200" src="./src/assets/Tops.png">
+<img  alt="User Profile" width=190" src="./src/assets/User Profile.png">
 
 </div>
 
