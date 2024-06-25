@@ -59,3 +59,26 @@ Para esse projeto eu em especial prefirir usar um Design pronto no intuito de se
 </div>
 
 <br>
+
+## Reesultando da Interface completa do Projeto 
+
+<br>
+
+## Principais Formato de navegacao do Projeto 
+
+<br>
+<div style="display: inline_block" align="center">
+
+<img  alt="React-Native-Navigation" width="120" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/reactnavigation/reactnavigation-original.svg">
+
+</div>
+<br>
+
+Foi usando a biblioteca React Navigation que permitiu usar no projeto todos os tres tipos de navegacao possiveis em um projeto de tamanho medio como esse que foi feito que sao:
+
+* <a href='https://reactnavigation.org/docs/stack-navigator' style="color: white">Stack Navigator</a>
+
+* <a href='https://reactnavigation.org/docs/bottom-tab-navigator' style="color: white">Bottom Tabs Navigator</a>
+
+<br>
+Obs:. todos sao links clicaveis para documentacao oficial.
