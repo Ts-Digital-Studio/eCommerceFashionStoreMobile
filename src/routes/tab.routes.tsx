@@ -45,6 +45,7 @@ export default function TabRoutes() {
                         return <Octicons name="home" size={25} color={color}/>
                     }
                     ),
+                    tabBarHideOnKeyboard: true
                 }}
             />
             <Tab.Screen

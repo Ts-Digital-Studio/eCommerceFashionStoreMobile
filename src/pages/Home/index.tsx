@@ -14,7 +14,7 @@ export default function Home() {
     <Conteiner>
       <ConteinerTxtTitule>
         <Text>F</Text> 
-        <Image source={require('../../assets/bag.png')}/>
+        <Image source={require('../../assets/bag2.png')}/>
         <Text>sn</Text> 
         <TouchableOpacity activeOpacity={0.3}>
           <IconNotification name='notifications-outline' />
