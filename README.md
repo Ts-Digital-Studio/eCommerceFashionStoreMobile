@@ -47,6 +47,8 @@ Para esse projeto eu em especial prefirir usar um Design pronto no intuito de se
 
 <br>
 
+Figma do projeto a seguir: [Figma do Projeto Link Clicar](https://www.figma.com/design/PJhQu1iquUYSANjsciuFiw/eCommerce-fashion-store-app-design-for-free-(Community)?node-id=56-998&node-type=canvas&t=ZZfFkbyxMzPu1S6j-0)
+
 ## Pq Usar o FireBase no Projeto Expo Go
 
 <br>
@@ -138,3 +140,7 @@ Logo apos isso vc vera uma opcao para conectar o seu APP usando o QR code para l
 <br>
 
 Desta forma agora vc podera usar o aplicativo e tambem fazeer alteracoes no codigo fonte do projeto.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
