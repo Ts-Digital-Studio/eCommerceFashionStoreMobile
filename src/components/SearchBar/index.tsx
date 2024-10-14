@@ -3,6 +3,9 @@ import {
     Conteiner,
     Icon,
     TextInput,
+    Text,
+    DivTypes,
+    IconArrow
 } from './style';
 import theme from '../../global/styles/theme';
 
@@ -16,6 +19,11 @@ export default function SearchBar() {
        <TextInput
         placeholder='Search here'
        />
+       <Text>|</Text>
+       <DivTypes>
+          <Text>Women</Text>
+          <IconArrow name='keyboard-arrow-down'/>
+       </DivTypes>
     </Conteiner>
   );
 }

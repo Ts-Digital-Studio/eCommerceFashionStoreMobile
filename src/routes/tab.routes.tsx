@@ -1,11 +1,13 @@
 import React from "react";
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { BottomTabBarButtonProps, createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 import Home from "../pages/Home";
 import Search from "../pages/Search";
 import Cart from "../pages/Cart";
 import UserAccount from "../pages/User-Account";
 import Wishlist from "../pages/Wishlist";
+import Category from "../pages/Category";
+import SingleProduct from "../pages/Single-Product";
 
 import Octicons from '@expo/vector-icons/Octicons';
 import Foundation from '@expo/vector-icons/Foundation';
@@ -14,8 +16,21 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
 import theme from "../global/styles/theme";
+import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs/lib/typescript/src/types";
 
-const Tab = createBottomTabNavigator();
+type RoutesTabs = {
+    Home: undefined,
+    Search: undefined,
+    Cart: undefined,
+    UserAccount: undefined,
+    Wishlist: undefined,
+    Category: undefined,
+    SingleProduct: undefined
+}
+
+export type NavigationRoutesTabs = BottomTabNavigationProp<RoutesTabs>
+
+const Tab = createBottomTabNavigator<RoutesTabs>();
 
 export default function TabRoutes() {
     return(
@@ -35,7 +50,7 @@ export default function TabRoutes() {
             }}
         >
             <Tab.Screen
-                name='Home-Tab'
+                name='Home'
                 component={Home}
                 options={{
                     tabBarIcon: (({size,color,focused})=> {
@@ -49,7 +64,7 @@ export default function TabRoutes() {
                 }}
             />
             <Tab.Screen
-                name='Search-Tab'
+                name='Search'
                 component={Search}
                 options={{
                     tabBarIcon: (({size,color,focused})=> {
@@ -62,7 +77,7 @@ export default function TabRoutes() {
                 }}
             />
             <Tab.Screen
-                name='Cart-Tab'
+                name='Cart'
                 component={Cart}
                 options={{
                     tabBarIcon: (({size,color,focused})=> {
@@ -75,7 +90,7 @@ export default function TabRoutes() {
                 }}
             />
             <Tab.Screen
-                name='Wishlist-Tab'
+                name='Wishlist'
                 component={Wishlist}
                 options={{
                     tabBarIcon: (({size,color,focused})=> {
@@ -88,7 +103,7 @@ export default function TabRoutes() {
                 }}
             />
             <Tab.Screen
-                name='Account-Tab'
+                name='UserAccount'
                 component={UserAccount}
                 options={{
                     tabBarIcon: (({size,color,focused})=> {
@@ -98,6 +113,20 @@ export default function TabRoutes() {
                         return <MaterialCommunityIcons name="account-outline" size={30} color={color}/>
                     }
                     ),
+                }}
+            />
+            <Tab.Screen 
+                name='Category'
+                component={Category}
+                options={{
+                    tabBarButton: () => null
+                }}
+            />
+            <Tab.Screen
+                name='SingleProduct'
+                component={SingleProduct}
+                options={{
+                    tabBarButton: () => null
                 }}
             />
         </Tab.Navigator>
