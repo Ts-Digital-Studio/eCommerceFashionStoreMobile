@@ -30,11 +30,11 @@ type RoutesTabs = {
 
 export type NavigationRoutesTabs = BottomTabNavigationProp<RoutesTabs>
 
-const Tab = createBottomTabNavigator<RoutesTabs>();
+const {Navigator, Screen} = createBottomTabNavigator<RoutesTabs>();
 
 export default function TabRoutes() {
     return(
-        <Tab.Navigator 
+        <Navigator 
             screenOptions={{
                 headerShown: false,
                 tabBarShowLabel: false,
@@ -49,7 +49,7 @@ export default function TabRoutes() {
                 }
             }}
         >
-            <Tab.Screen
+            <Screen
                 name='Home'
                 component={Home}
                 options={{
@@ -63,7 +63,7 @@ export default function TabRoutes() {
                     tabBarHideOnKeyboard: true
                 }}
             />
-            <Tab.Screen
+            <Screen
                 name='Search'
                 component={Search}
                 options={{
@@ -76,7 +76,7 @@ export default function TabRoutes() {
                     ),
                 }}
             />
-            <Tab.Screen
+            <Screen
                 name='Cart'
                 component={Cart}
                 options={{
@@ -89,7 +89,7 @@ export default function TabRoutes() {
                     ),
                 }}
             />
-            <Tab.Screen
+            <Screen
                 name='Wishlist'
                 component={Wishlist}
                 options={{
@@ -102,7 +102,7 @@ export default function TabRoutes() {
                     ),
                 }}
             />
-            <Tab.Screen
+            <Screen
                 name='UserAccount'
                 component={UserAccount}
                 options={{
@@ -115,20 +115,20 @@ export default function TabRoutes() {
                     ),
                 }}
             />
-            <Tab.Screen 
+            <Screen 
                 name='Category'
                 component={Category}
                 options={{
                     tabBarButton: () => null
                 }}
             />
-            <Tab.Screen
+            <Screen
                 name='SingleProduct'
                 component={SingleProduct}
                 options={{
                     tabBarButton: () => null
                 }}
             />
-        </Tab.Navigator>
+        </Navigator>
     );
 }

@@ -1,21 +1,40 @@
 import React from "react";
-import { createStackNavigator } from '@react-navigation/stack'
-import Home from "../pages/Home";
+import Splash from "../pages/Splash";
+import { createNativeStackNavigator, NativeStackNavigationProp } from "@react-navigation/native-stack";
+import TabRoutes from "./tab.routes";
 
-const Stack = createStackNavigator();
+type RoutesStack = {
+    Home: undefined,
+    Search: undefined,
+    Cart: undefined,
+    UserAccount: undefined,
+    Wishlist: undefined,
+    Category: undefined,
+    SingleProduct: undefined,
+    Splash: undefined
+    homeTabs: undefined
+}
+
+export type NavigationRoutesStack = NativeStackNavigationProp<RoutesStack>
+
+const {Navigator, Screen} = createNativeStackNavigator<RoutesStack>();
 
 export default function StackRoutes() {
     return(
-        <Stack.Navigator
+        <Navigator
             screenOptions={{
-
+                headerShown: false
             }}
         >
-            <Stack.Screen
-                name="Home-Stack"
-                component={Home}
+            <Screen
+                name="Splash"
+                component={Splash}
             />
-        </Stack.Navigator>
+            <Screen
+                name="homeTabs"
+                component={TabRoutes}
+            />
+        </Navigator>
     );
 }
 

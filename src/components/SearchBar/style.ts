@@ -26,7 +26,7 @@ export const Conteiner = styled.View`
 
 export const Icon = styled(Feather)`
     font-size: 25px;
-    margin-left: ${RFPercentage(0.5)}%;
+    margin-left: ${RFPercentage(0.2)}%;
 `;
 
 export const TextInput = styled.TextInput.attrs({
